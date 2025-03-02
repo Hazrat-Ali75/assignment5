@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <style>
+        .activity{
+            padding: 8px;
+            background:rgb(231, 233, 236);
+            border-radius: 4px;
+            margin :6px 0;
+            color: black;
+        }
+    </style>
+</head>
+<body class="bg-slate-200 pt-[25px]">
+    <nav class="bg-slate-50 flex justify-between items-center w-[90%] mx-auto p-4 mb-[25px] rounded-xl">
+        <div class="flex gap-1 items-center">
+            <img src="assets/logo.png" alt="">
+            <h1 class="text-[30px] text-gray-700 font-normal">Dev<span class="text-[30px] font-bold text-black">Board</span></h1>
+        </div>
+        <div class="flex  items-center gap-8">
+            <div class="bg-slate-200 rounded-[20px] px-4 py-1 flex gap-2 items-center">
+                <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+                <p id="completeTask" class="font-bold text-[black] text-[25px]">23</p>
+            </div>
+            <div class="bg-slate-200 rounded-[50px] p-1 theme">
+                <img src="assets/theme-btn.png" alt="">
+            </div>
+        </div>
+    </nav>
+    <main class="w-[90%] mx-auto">
+         <div class="flex gap-3">
+            <div class="basis-[75%] p-4 rounded-lg bg-slate-100">
+                <div class="flex gap-3">
+                <div class="basis-[25%] bg-slate-200 p-3 rounded-lg flex items-center gap-4 ">
+                    <div class="bg-slate-100 p-3 flex rounded-[50px]">
+                        <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+                    </div>
+                    <div class="">
+                        <p class="text-gray-700">Task Assigned</p>
+                        <h2 id="taskAssign" class="text-[28px]
+                        font-bold text-black">6</h2>
+                    </div>
+                </div>
+                <div class="basis-[50%] bg-gradient-to-r from-blue-600 to-blue-300 p-3 cursor-pointer rounded-xl flex items-center ">
+                    <img class="mx-3" src="assets/board.png" alt="">
+                    <p class="text-white text-[25px]">Discover Something<br> New Today!</p>
+                </div>
+                <div class="basis-[25%] bg-slate-200 p-3 rounded-lg flex items-center gap-3">
+                    <div class="bg-slate-100 p-3 rounded-[50px]">
+                        <img src="assets/calender.png" alt="" srcset="">
+                    </div>
+                    <div>
+                        <p class="text-black text-[18px] currDate">Wed,July 28 2025</p>
+                </div>
+                </div>
+                </div>
+                <div class="mt-6 grid grid-cols-3 gap-3">
+                      <div class="bg-slate-200 rounded-xl p-3">
+                        <p class="bg-slate-100 w-[100px] p-1 rounded-md text-center text-[18px] text-black">ShopEase</p>
+                        <h2 class="my-3 text-black text-[22px] font-medium">Fix Mobile Button Issue</h2>
+                        <p class="bg-slate-100 p-2 rounded-md mb-3 text-gray-700">Debug using Chrome Browser, check for overlapping...</p>
+                        <hr class="border-dashed mb-3">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p>Deadline</p>
+                                <h3 class="font-medium text-black">21 March 2025</h3>
+                            </div>
+                            <button class="Btn btn btn-info bg-blue-600 text-white">Completed</button>
+                        </div>
+                      </div>
+                    <div class="bg-slate-200 rounded-xl p-3">
+                        <p class="bg-slate-100 w-[100px] p-1 rounded-md text-center text-[18px] text-black">CloudSync</p>
+                        <h2 class="my-3 text-black text-[22px] font-medium">Add Dark Mode</h2>
+                        <p class="bg-slate-100 p-2 rounded-md mb-3 text-gray-700">Debug using Chrome Browser, check for overlapping...</p>
+                        <hr class="border-dashed mb-3">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p>Deadline</p>
+                                <h3 class="font-medium text-black">21 March 2025</h3>
+                            </div>
+                            <button class="Btn btn btn-info bg-blue-600 text-white">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-slate-200 rounded-xl p-3">
+                        <p class="bg-slate-100 w-[100px] p-1 rounded-md text-center text-[18px] text-black">SwiftPay</p>
+                        <h2 class="my-3 text-black text-[22px] font-medium">Optimize Home page</h2>
+                        <p class="bg-slate-100 p-2 rounded-md mb-3 text-gray-700">Debug using Chrome Browser, check for overlapping...</p>
+                        <hr class="border-dashed mb-3">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p>Deadline</p>
+                                <h3 class="font-medium text-black">21 March 2025</h3>
+                            </div>
+                            <button class="Btn btn btn-info bg-blue-600 text-white">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-slate-200 rounded-xl p-3">
+                        <p class="bg-slate-100 w-[100px] p-1 rounded-md text-center text-[18px] text-black">Meta</p>
+                        <h2 class="my-3 text-black text-[22px] font-medium">Add new emoji 🤲</h2>
+                        <p class="bg-slate-100 p-2 rounded-md mb-3 text-gray-700">Debug using Chrome Browser, check for overlapping...</p>
+                        <hr class="border-dashed mb-3">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p>Deadline</p>
+                                <h3 class="font-medium text-black">21 March 2025</h3>
+                            </div>
+                            <button class="Btn btn btn-info bg-blue-600 text-white">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-slate-200 rounded-xl p-3">
+                        <p class="bg-slate-100 w-[100px] p-1 rounded-md text-center text-[18px] text-black">Google LLC</p>
+                        <h2 class="my-3 text-black text-[22px] font-medium">Integrate OpenAli API</h2>
+                        <p class="bg-slate-100 p-2 rounded-md mb-3 text-gray-700">Debug using Chrome Browser, check for overlapping...</p>
+                        <hr class="border-dashed mb-3">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p>Deadline</p>
+                                <h3 class="font-medium text-black">21 March 2025</h3>
+                            </div>
+                            <button class="Btn btn btn-info bg-blue-600 text-white">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-slate-200 rounded-xl p-3">
+                        <p class="bg-slate-100 w-[100px] p-1 rounded-md text-center text-[18px] text-black">Glassdor</p>
+                        <h2 class="my-3 text-black text-[22px] font-medium">Improve Job searching</h2>
+                        <p class="bg-slate-100 p-2 rounded-md mb-3 text-gray-700">Debug using Chrome Browser, check for overlapping...</p>
+                        <hr class="border-dashed mb-3">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p>Deadline</p>
+                                <h3 class="font-medium text-black">21 March 2025</h3>
+                            </div>
+                            <button class="Btn btn btn-info bg-blue-600 text-white">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basis-[25%] p-4 rounded-lg bg-slate-100">
+                <div class="w-[50%] mx-auto">
+                    <div class="flex items-center gap-2">
+                        <i class="fa fa-undo text-[25px] text-black" aria-hidden="true"></i>
+                        <p class="font-medium text-black">Acitvity Log</p>
+                    </div>
+                    <button class="btn btn-info bg-blue-600 text-white my-3 delBtn">Clear History</button>
+                </div>
+                <p class="mb-5">--------------------------------------</p>
+                <div class="acivityAdd">
+
+                </div>               
+            </div>
+         </div>
+    </main>
+    <script src="script/app.js"></script>
+    <script src="script/utilities.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-200 pt-[25px]">
+    <nav class="bg-slate-50 flex justify-between items-center w-[90%] mx-auto p-4 mb-[25px] rounded-xl">
+        <div class="flex gap-1 items-center">
+            <img src="assets/logo.png" alt="">
+            <h1 class="text-[30px] text-gray-700 font-normal">Dev<span class="text-[30px] font-bold text-black">Board</span>
+            </h1>
+        </div>
+        <div class="flex  items-center gap-8">
+        <button class="btn btn-primary">Back to Desk</button>
+        </div>
+    </nav>
+    <h2 class="font-bold text-[25px] text-center my-5 text-black">Blogs</h2>
+    <div class="w-[90%] mx-auto flex flex-col gap-5">
+        <div class="flex flex-col gap-1">
+            <div class="bg-slate-100 rounded-lg">
+                <h3 class="text-black text-[18px] font-semibold p-3">Question-1:What are the different ways to select an element in the DOM?</h3>
+            </div>
+            <div class="bg-slate-100 rounded-lg">
+                <p class="p-3">1.Using getElementById. <br>
+                2.Using getElementsByClassName.<br>
+                3.Using getElementsByTagName.<br>
+                4.Using querySelector.<br>
+                5.Using querySelectorAll.</p>
+            </div>
+        </div>
+        <div class="flex flex-col gap-1">
+            <div class="bg-slate-100 rounded-lg">
+                <h3 class="text-black text-[18px] font-semibold p-3">Question-2: What is the difference between innerHTML, innerText, and textContent?</h3>
+            </div>
+            <div class="bg-slate-100 rounded-lg">
+                <p class="p-3">1.innerHTML: HTML markup (tags and text). Use for HTML manipulation. Potential security risk. <br>
+                2.innerText: Visible text, respects CSS styling. Use for user-displayed text. Slower.<br>
+                3.textContent: Raw text content, ignores CSS. Use for getting all text. Faster.</p>
+            </div>
+        </div>
+        <div class="flex flex-col gap-1">
+            <div class="bg-slate-100 rounded-lg">
+                <h3 class="text-black text-[18px] font-semibold p-3">Question-3: What is event delegation in the DOM?</h3>
+            </div>
+            <div class="bg-slate-100 rounded-lg">
+                <p class="p-3">Imagine you have a bunch of kids (child elements) and you want them to raise their hands (trigger an event). Instead of
+                asking each kid individually to raise their hand, you tell them all: "When anyone raises their hand, I'll check who did
+                it."<br>
+                
+                That's event delegation:<br>
+                
+                One listener: You put one "listener" (like your instruction) on the parent (the group of kids).<br>
+                Check who: When a child triggers an event (raises their hand), you find out which child did it.<br>
+                Easy for many: It's easier than telling each child separately, especially if you get more kids later.<p>
+            </div>
+        </div>
+        <div class="flex flex-col gap-1">
+            <div class="bg-slate-100 rounded-xl">
+                <h3 class="text-black text-[18px] font-semibold p-3">Question-4: What is event bubbling in the DOM?<h3>
+            </div>
+            <div class="bg-slate-100 rounded-lg">
+                <p class="p-3">Imagine a bunch of nested boxes. If you tap the smallest box inside, the "tap" travels outwards, like ripples in water,
+                through each bigger box surrounding it. That's event bubbling: an event on one element "bubbles up" to its parent
+                elements.</p>
+            </div>
+        </div>
+        <div class="flex flex-col gap-1">
+            <div class="bg-slate-100 rounded-lg">
+                <h3 class="text-black text-[18px] font-semibold p-3">Question-5: How do you create, add, and remove elements using JavaScript?<h3>
+            </div>
+            <div class="bg-slate-100 rounded-lg">
+                <p class="p-3">Create:<br>
+                
+                document.createElement('div') - Creates a new div element.<br>
+                Add:<br>
+                
+                parentElement.appendChild(newElement) - Adds newElement as a child to parentElement.<br>
+                parentElement.insertBefore(newElement, referenceElement) - Inserts newElement before referenceElement.<br>
+                Remove:<br>
+                
+                elementToRemove.remove() - Removes the element.<br>
+                parentElement.removeChild(elementToRemove) - Removes elementToRemove from parentElement.<p>
+            </div>
+        </div>
+    </div>
+    <script src="script/app.js"></script>
+</body>
+</html>
